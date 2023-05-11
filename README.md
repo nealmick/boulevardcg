@@ -1,7 +1,7 @@
 # boulevardcg
 Technical Interview 
 
-'''
+```Bash
 
 git clone https://github.com/nealmick/boulevardcg.git
 cd boulevardcg
@@ -18,4 +18,4 @@ post
             "title": "test",
             "content": "test"
 }
-'''
+```
