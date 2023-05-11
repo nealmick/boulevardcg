@@ -13,10 +13,4 @@ python3 manage.py runserver
 http://localhost:8000/api/articles/
 
 
-
-Post/Put Requests:
-{
-            "title": "test",
-            "content": "test"
-}
 ```
