@@ -13,7 +13,7 @@ python3 manage.py runserver
 http://localhost:8000/api/articles/
 
 
-post
+Post Request
 {
             "title": "test",
             "content": "test"
