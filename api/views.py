@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view,permission_classes
+from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import ArticleSerializer
@@ -9,17 +10,19 @@ from .models import Article
 
 
 
-#Test input
-'''
+'''Test Input
 {
     "title": "test",
     "content": "test"
 }
 '''
 
+
+
+
 #Articles List View
-#/articles/
 @api_view(['GET','POST'])
+@permission_classes([IsAuthenticated])
 def articles(request):
     if request.method == "POST":
         print('post')
@@ -38,8 +41,8 @@ def articles(request):
 
 
 #Article Detail View
-#/articles/<int:ArticlePK>
 @api_view(['GET','PUT','DELETE'])
+@permission_classes([IsAuthenticated])
 def articleDetail(request, ArticlePK):
     try:
         article = Article.objects.get(pk=ArticlePK)
