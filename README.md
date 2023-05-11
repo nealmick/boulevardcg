@@ -1,6 +1,7 @@
 # boulevardcg
-Technical Interview 
-
+#### Technical Interview 
+includes:
+Article list with pagination, Detail, Create, Update, and Delete endoints.  All endpints secured with authentication classes and tested thoroughly using api/tests.py
 ```Bash
 
 git clone https://github.com/nealmick/boulevardcg.git
@@ -20,10 +21,14 @@ http://localhost:8000/admin/
 http://localhost:8000/api/articles/
 
 
+
+```
+
+
+```
 Test input for post/put
 {
     "title": "test",
     "content": "test"
 }
-
 ```
