@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'api',
     'rest_framework',
+    'rest_framework.authtoken',
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -108,7 +109,7 @@ DEFAULT_RENDERER_CLASSES = [
     ]
 
 DEFAULT_AUTHENTICATION_CLASSES = [
-    'rest_framework.authentication.SessionAuthentication'
+    'rest_framework.authentication.TokenAuthentication',
 ]
 if DEBUG:
     DEFAULT_RENDERER_CLASSES += [
