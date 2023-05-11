@@ -14,7 +14,7 @@ python3 manage.py runserver
 
 http://localhost:8000/api/articles/
 
-#note: this does use token based authentication and you must be authoried via the admin panel.
+#note: this does use session and token based authentication and you must be authoried via the admin panel.
 http://localhost:8000/admin/
 
 
