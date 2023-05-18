@@ -19,6 +19,7 @@ from django.urls import path,include
 from django.contrib.auth import views as auth_views
 from . import views
 urlpatterns = [
+    path('api-auth/', include('rest_framework.urls')),
     path('articles/', views.articles, name='articles'),
     path('articles/<int:ArticlePK>/', views.articleDetail,name='article-detail'),
 ]
